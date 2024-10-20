@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Rule Engine - Eligibility Check</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <div class="container">
+        <h2>Rule Engine - Eligibility Check</h2>
+
+        <form id="rule-form">
+            <label for="ruleString">Rule (e.g., age > 30 AND department = 'Sales')</label><br>
+            <input type="text" id="ruleString" placeholder="Enter rule" required /><br>
+
+            <label for="data">Attributes (JSON Format)</label><br>
+            <textarea id="data" rows="5" cols="50" placeholder='{"age": 35, "department": "Sales"}' required></textarea><br>
+
+            <button type="submit">Evaluate</button>
+        </form>
+
+        <h3>Result: <span id="result"></span></h3>
+
+        <!-- New Form for Creating a Rule -->
+        <h3>Create Rule</h3>
+        <form id="create-rule-form">
+            <label for="newRuleString">New Rule (e.g., age < 40)</label><br>
+            <input type="text" id="newRuleString" placeholder="Enter new rule" required /><br>
+            <button type="submit">Create Rule</button>
+        </form>
+
+        <h3>Creation Result: <span id="creationResult"></span></h3>
+    </div>
+
+    <script th:src="@{/js/scripts.js}"></script>
+</body>
+</html>

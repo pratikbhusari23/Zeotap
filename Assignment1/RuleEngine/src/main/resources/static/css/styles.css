@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E0F7FA; /* Light cyan background */
+    color: #00695C; /* Dark teal text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #B2EBF2; /* Cyan accent */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #004D40; /* Darker teal */
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #00695C;
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+input:hover, textarea:hover {
+    transform: scale(1.02);
+}
+
+button {
+    background-color: #004D40; /* Dark teal */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00695C; /* Teal */
+}
+
+#result {
+    color: #D32F2F; /* Red for Not Eligible, Green for Eligible */
+}

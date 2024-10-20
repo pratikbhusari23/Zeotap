@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Weather Monitoring</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Monitoring Dashboard</h1>
+
+        <!-- Temperature Unit Selection -->
+        <div id="tempUnitSelection">
+            <label>
+                <input type="radio" name="tempUnit" value="C" checked>
+                Celsius
+            </label>
+            <label>
+                <input type="radio" name="tempUnit" value="F">
+                Fahrenheit
+            </label>
+        </div>
+
+        <button id="fetchWeather">Fetch Weather Data</button>
+        <div id="weatherSummary"></div>
+        
+        <div class="chart-container">
+            <canvas id="temperatureChart"></canvas>
+        </div>
+
+    </div>
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
